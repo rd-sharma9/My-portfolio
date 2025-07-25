@@ -1,10 +1,10 @@
-import React from "react";
+ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import profileImg from "../assets/Profile.jpeg"; // Confirm the path is correct
+import profileImg from "../assets/Profile.jpeg"; // Confirm path
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-10 bg-gradient-to-b from-white to-blue-50">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-20 py-10 bg-gradient-to-b from-white to-blue-50">
       {/* Text Content */}
       <div className="text-center md:text-left max-w-xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
 
           <a
-            href="/resume.pdf" // Replace with your resume file path
+            href="/resume.pdf" // Update path as needed
             download
             className="mt-3 md:mt-0 px-4 py-2 bg-blue-700 text-white text-base font-semibold rounded-md shadow hover:bg-blue-800 transition duration-300"
           >
@@ -48,16 +48,15 @@ const Hero = () => {
       </div>
 
       {/* Image Section */}
-<div className="mb-10 md:mb-0 flex justify-center md:justify-end">
-  <div className="w-80 h-auto md:w-[22rem] rounded-xl overflow-hidden shadow-xl bg-white">
-    <img
-      src={profileImg}
-      alt="Rudresh Sharma"
-      className="w-full h-auto object-cover object-top"
-    />
-  </div>
-</div>
-
+      <div className="mb-10 md:mb-0 flex justify-center md:justify-end">
+        <div className="w-80 h-auto md:w-[22rem] rounded-xl overflow-hidden shadow-xl bg-white">
+          <img
+            src={profileImg}
+            alt="Rudresh Sharma"
+            className="w-full h-auto object-cover object-top"
+          />
+        </div>
+      </div>
     </section>
   );
 };
